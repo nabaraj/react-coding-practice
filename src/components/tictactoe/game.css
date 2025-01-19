@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  max-width: 90px;
+}
+.square {
+  padding: 5px;
+  border: 1px solid;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

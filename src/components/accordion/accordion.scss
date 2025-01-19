@@ -1,0 +1,33 @@
+// accordion.scss
+.accordionContainer {
+  width: 100%;
+}
+
+.accordionBlock {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.accordionHeader {
+  background-color: #f7f7f7;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.accordionContent {
+  height: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  transition: height 0.3s ease, padding 0.3s ease;
+}
+
+.accordionContent.show {
+  height: auto; /* Expand to fit content */
+  padding: 10px;
+}
+
+.accordionContent.hide {
+  height: 0;
+  padding: 0 10px;
+}

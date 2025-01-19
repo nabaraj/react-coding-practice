@@ -1,0 +1,40 @@
+.lights {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.lights::after {
+  content: "";
+  display: block;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.lights.red.glow {
+  box-shadow: red 0 0 10px;
+}
+.lights.yellow.glow {
+  box-shadow: yellow 0 0 10px;
+}
+.lights.green.glow {
+  box-shadow: green 0 0 10px;
+}
+
+.lights.glow::after {
+  opacity: 1;
+  box-shadow: inset #fff 0 0 10px;
+}
+.lights.red::after {
+  background-color: red;
+}
+.lights.green::after {
+  background-color: green;
+}
+.lights.yellow::after {
+  background-color: #fdff70;
+}

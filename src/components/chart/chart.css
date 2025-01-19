@@ -1,0 +1,44 @@
+.chartBlock {
+  position: relative;
+  display: flex;
+  align-items: end;
+  gap: 5px;
+  height: 300px;
+}
+.d-flex {
+  display: flex;
+}
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.animate .chart-stick {
+  height: 0 !important;
+}
+.chart-stick {
+  position: relative;
+}
+.toolTip {
+  position: absolute;
+  left: 50%;
+  background: black;
+  padding: 2px;
+  color: white;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 1px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  bottom: 50%;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 1;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.chart-stick:hover .toolTip {
+  opacity: 1;
+  bottom: 105%;
+}
